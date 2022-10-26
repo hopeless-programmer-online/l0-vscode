@@ -4,6 +4,7 @@
     "scopeName": "source.l0",
     "patterns": [
         { "include": "#keyword" },
+        { "include": "#builtin" },
         { "include": "#line_comment" },
         { "include": "#number" },
         { "include": "#string" },
@@ -17,7 +18,11 @@
         },
         "keyword": {
             "name": "keyword.control",
-            "match": "(super)"
+            "match": "(super|if)"
+        },
+        "builtin": {
+            "name": "entity.name.function",
+            "match": "(print)"
         },
         "number": {
             "name": "constant.numeric",
