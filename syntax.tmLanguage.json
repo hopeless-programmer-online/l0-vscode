@@ -5,7 +5,8 @@
     "patterns": [
         { "include": "#keyword" },
         { "include": "#line_comment" },
-        { "include": "#number" }
+        { "include": "#number" },
+        { "include": "#string" }
     ],
     "repository": {
         "line_comment": {
@@ -19,6 +20,10 @@
         "number": {
             "name": "constant.numeric",
             "match": "-?\\s*\\d(?:\\d|\\s)*(?:\\.\\s*\\d(?:\\d|\\s)*)?"
+        },
+        "string": {
+            "name": "string.quoted.double",
+            "match": "\"(?:[^\"]|(?:\"\"))*\""
         }
     }
 }
