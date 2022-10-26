@@ -10,5 +10,18 @@
     "Programming Languages"
   ],
   "contributes": {
+    "languages": [
+      {
+        "id": "l0",
+        "aliases": [
+          "l0",
+          "l0"
+        ],
+        "extensions": [
+          ".l0"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ]
   }
 }
