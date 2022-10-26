@@ -4,7 +4,8 @@
     "scopeName": "source.l0",
     "patterns": [
         { "include": "#keyword" },
-        { "include": "#line_comment" }
+        { "include": "#line_comment" },
+        { "include": "#number" }
     ],
     "repository": {
         "line_comment": {
@@ -14,6 +15,10 @@
         "keyword": {
             "name": "keyword.control",
             "match": "\\b(super)\\b"
+        },
+        "number": {
+            "name": "constant.numeric",
+            "match": "-?\\s*\\d(?:\\d|\\s)*(?:\\.\\s*\\d(?:\\d|\\s)*)?"
         }
     }
 }
