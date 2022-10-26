@@ -3,13 +3,16 @@
     "name": "l0",
     "scopeName": "source.l0",
     "patterns": [
-        {
-            "include": "#keyword"
-        }
+        { "include": "#keyword" },
+        { "include": "#line_comment" }
     ],
     "repository": {
-        "keyword" : {
-            "name" : "keyword.control",
+        "line_comment": {
+            "name": "comment.line",
+            "match": ";.*(?:\\n|$)"
+        },
+        "keyword": {
+            "name": "keyword.control",
             "match": "\\b(super)\\b"
         }
     }
