@@ -1,0 +1,14 @@
+{
+  "name": "l0-vscode",
+  "displayName": "l0",
+  "description": "Syntax highlight for L0 language in VSCode.",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.72.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+  }
+}
