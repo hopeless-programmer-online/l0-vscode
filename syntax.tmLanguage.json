@@ -1,0 +1,16 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "l0",
+    "scopeName": "source.l0",
+    "patterns": [
+        {
+            "include": "#keyword"
+        }
+    ],
+    "repository": {
+        "keyword" : {
+            "name" : "keyword.control",
+            "match": "\\b(super)\\b"
+        }
+    }
+}

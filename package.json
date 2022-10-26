@@ -26,6 +26,13 @@
           "dark": "./icon.svg"
         }
       }
+    ],
+    "grammars": [
+      {
+        "language": "l0",
+        "scopeName": "source.l0",
+        "path": "./syntax.tmLanguage.json"
+      }
     ]
   }
 }
