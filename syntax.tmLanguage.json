@@ -6,7 +6,9 @@
         { "include": "#keyword" },
         { "include": "#line_comment" },
         { "include": "#number" },
-        { "include": "#string" }
+        { "include": "#string" },
+        { "include": "#declaration" },
+        { "include": "#identifier" }
     ],
     "repository": {
         "line_comment": {
@@ -15,7 +17,7 @@
         },
         "keyword": {
             "name": "keyword.control",
-            "match": "\\b(super)\\b"
+            "match": "(super)"
         },
         "number": {
             "name": "constant.numeric",
@@ -24,6 +26,10 @@
         "string": {
             "name": "string.quoted.double",
             "match": "\"(?:[^\"]|(?:\"\"))*\""
+        },
+        "identifier": {
+            "name": "variable",
+            "match": "[a-zA-Z0-9_]+"
         }
     }
 }
